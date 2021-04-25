@@ -86,18 +86,26 @@ h3 {
   position: relative;
 }
 
+.regular-wrapper-contact {
+  width: 100vw;
+  height: 80vh;
+  z-index: 2;
+  position: relative;
+}
+
+.regular-wrapper-footer {
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  position: relative;
+}
+
 /* Utility */
 .container {
   margin: auto;
   max-width: 1100px;
   overflow: auto;
   padding: 0 20px;
-}
-
-.form-container {
-  margin: auto;
-  background: #fff;
-  padding: 40px;
 }
 
 .text-primary {
@@ -216,7 +224,7 @@ h3 {
 /* Floater */
 .floater {
   background: rgba(255, 255, 255, 0.8);
-  margin: 12rem 0;
+  margin: 15rem 0;
   padding: 3rem 4rem;
 }
 
@@ -241,10 +249,9 @@ h3 {
   background: rgba(24, 24, 24, 0.6);
   color: rgb(255, 255, 255);
   width: auto;
-  height: auto;
-  margin: 10rem auto;
+  height: 60vh;
+  margin-top: 10rem;
   padding: 3rem 4rem;
-  size: 80vh;
 }
 
 .about-me-floater h1 {
@@ -257,7 +264,7 @@ h3 {
   max-width: 100%;
   overflow: auto;
   padding: 50px 20px;
-  background: #ccc;
+  background: #e7e6e6;
   height: 100vh;
 }
 
@@ -306,21 +313,27 @@ h3 {
 
 /* Company Info */
 .company-ref {
+  margin: auto;
+  max-width: 100%;
+  overflow: auto;
+  padding: 50px 20px;
   background: #e7e6e6;
-  height: auto;
-  padding: 40px;
+  background: #e7e6e6;
+  height: 80vh;
 }
 
 .company-ref .company-left {
   float: left;
   width: 50%;
   padding: 20px;
+  margin-top: 20vh;
 }
 
 .company-ref .company-right {
   float: right;
   width: 50%;
   padding: 20px;
+  margin-top: 20vh;
 }
 
 .company-ref .company-left img,
@@ -353,9 +366,15 @@ h3 {
 }
 
 /* Footer */
-#main-footer {
+#footer {
   text-align: center;
   background: #fff;
-  padding: 25px;
+  position: relative;
+  margin: auto;
   color: #333;
+  height: auto;
+}
+
+#footer p {
+  padding: 30px;
 }
