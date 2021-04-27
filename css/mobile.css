@@ -59,24 +59,28 @@
   padding-bottom: 20px;
 }
 
+/* About-us */
+
 /* Company Info */
 .company-ref .company-left {
   float: center;
   width: 100%;
+  margin-top: 0;
 }
 
 .company-ref .company-right {
   float: center;
   width: 100%;
+  margin-top: 0;
 }
 
 .company-ref .company-left img {
-  width: 101px;
+  width: 70px;
   height: auto;
 }
 
 .company-ref .company-right img {
-  width: 200px;
+  width: 140px;
   height: auto;
 }
 
