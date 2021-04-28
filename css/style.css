@@ -261,7 +261,7 @@ hr {
 
 .list-container h2 {
   background: #4d4d4d;
-  color: rgb(255, 255, 255);
+  color: #0d89c5;
   padding: 1.6rem;
   margin: auto;
 }
@@ -272,7 +272,7 @@ hr {
   float: left;
   width: 25%;
   height: 40vh;
-  border: #0d89c5 solid 10px;
+  border: #4d4d4d solid 2px;
 }
 
 .list-container .list-box img {
@@ -285,7 +285,6 @@ hr {
   text-align: center;
   color: #4d4d4d;
   line-height: 1.4rem;
-  padding: 10px 0;
 }
 
 .list-container .list-box .price-box {
@@ -375,7 +374,6 @@ hr {
 }
 
 .company-ref .company-left h3 {
-  line-height: 2rem;
   text-align: center;
   padding-top: 15px;
 }
@@ -486,19 +484,57 @@ hr {
 }
 
 /* Height responsiveness */
-@media screen and (max-height: 890px) {
-  .list-res-hidden {
-    display: none;
+@media screen and (max-height: 905px) {
+  .company-ref {
+    padding: 0;
   }
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 905px) {
+  hr {
+    margin: 3rem;
+  }
+}
+
+@media screen and (max-height: 740px) {
+  hr {
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-height: 670px) {
+  .company-content {
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-height: 590px) {
+  .company-content {
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-height: 890px) {
   .floater {
     margin: 10rem 0;
   }
 
   .list-container {
-    padding-top: 80px;
+    vertical-align: center;
+  }
+
+  .list-res-hidden {
+    display: none;
+  }
+
+  .list-container .list-box {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .floater {
+    margin: 7rem 0;
   }
 
   .about-me-floater {
@@ -513,4 +549,7 @@ hr {
   hr {
     margin: 5px;
   }
+}
+
+@media screen and (max-height: 450px) {
 }
