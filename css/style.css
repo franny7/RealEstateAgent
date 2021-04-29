@@ -269,15 +269,17 @@ hr {
 .list-container .list-box {
   background: #e7e6e6;
   margin: auto;
-  float: left;
+  /* float: left; */
+  float: center;
   width: 25%;
-  height: 40vh;
+  /* height: 40vh; */
+  height: auto;
   border: #4d4d4d solid 2px;
 }
 
 .list-container .list-box img {
   width: 100%;
-  height: 50%;
+  height: auto;
 }
 
 .list-container .list-box p {
@@ -290,7 +292,7 @@ hr {
 .list-container .list-box .price-box {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1rem;
   text-align: center;
   padding: 10px;
   color: #4d4d4d;
@@ -362,6 +364,10 @@ hr {
   float: right;
   width: 40%;
   margin: 5vh auto;
+}
+
+.company-ref .company-right-res {
+  display: none;
 }
 
 .company-ref .company-right i {
@@ -451,7 +457,7 @@ hr {
 
   /* Listings */
   .list-container {
-    height: auto;
+    height: 100vh;
   }
 
   .list-res-hidden {
@@ -459,8 +465,13 @@ hr {
   }
 
   .list-container .list-box {
-    width: 100%;
+    min-width: 80%;
     padding-bottom: 20px;
+    margin: auto;
+  }
+
+  .list-container h2 {
+    max-width: 80%;
   }
 
   /* About-us */
@@ -484,6 +495,55 @@ hr {
 }
 
 /* Height responsiveness */
+@media screen and (max-height: 890px) {
+  .floater {
+    margin: 10rem 0;
+  }
+
+  .list-container {
+    vertical-align: center;
+  }
+
+  .list-res-hidden {
+    display: none;
+  }
+
+  .list-container .list-box {
+    height: 37vh;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .floater {
+    margin: 7rem 0;
+  }
+
+  .about-me-floater {
+    line-height: 1.2;
+  }
+
+  .about-me-floater img {
+    height: 300px;
+    width: 260px;
+  }
+}
+
+/* About Me Section queries */
+@media screen and (max-width: 1020px) {
+  .about-me-content {
+    font-size: 0.9rem;
+    line-height: 2;
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .about-me-content {
+    font-size: 0.8rem;
+    line-height: 1.8;
+  }
+}
+
+/* Contact Section queries */
 @media screen and (max-height: 905px) {
   .company-ref {
     padding: 0;
@@ -502,6 +562,69 @@ hr {
   }
 }
 
+@media screen and (max-height: 600px) {
+  hr {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .company-ref {
+    padding: 0;
+  }
+
+  .company-ref .company-right {
+    margin: 1rem auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .company-content {
+    line-height: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .company-ref .company-right {
+    display: none;
+  }
+
+  .company-ref .company-right-res {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .company-ref .company-right-res i {
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .company-content {
+    margin: 1rem 0;
+  }
+
+  .company-ref .company-left h3 {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .company-ref {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  hr {
+    margin: 1rem;
+  }
+}
+
 @media screen and (max-height: 670px) {
   .company-content {
     line-height: 1.5;
@@ -512,44 +635,4 @@ hr {
   .company-content {
     margin: 1rem;
   }
-}
-
-@media screen and (max-height: 890px) {
-  .floater {
-    margin: 10rem 0;
-  }
-
-  .list-container {
-    vertical-align: center;
-  }
-
-  .list-res-hidden {
-    display: none;
-  }
-
-  .list-container .list-box {
-    height: 60vh;
-  }
-}
-
-@media screen and (max-height: 600px) {
-  .floater {
-    margin: 7rem 0;
-  }
-
-  .about-me-floater {
-    line-height: 1.2;
-  }
-
-  .about-me-floater img {
-    height: 300px;
-    width: 260px;
-  }
-
-  hr {
-    margin: 5px;
-  }
-}
-
-@media screen and (max-height: 450px) {
 }
