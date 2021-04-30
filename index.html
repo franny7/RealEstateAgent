@@ -7,6 +7,12 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
@@ -18,28 +24,29 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap"
       rel="stylesheet"
     />
+
     <title>Betty Rodriguez</title>
   </head>
   <body>
     <div class="parallax-wrapper">
       <header>
-        <nav id="navbar">
-          <div class="container">
+        <div id="navbar">
+          <div class="container" style="height: 90px">
             <h1 class="logo">
-              <a href="index.html"
-                >Betty Rodriguez <br /><span class="text-primary"
-                  >Real Estate Agent</span
-                ></a
-              >
+              <a href="index.html" class="primary-app-color"
+                >Betty <br />Rodriguez
+                <!-- <span class="text-primary"
+                  >Real Estate Agent</span> -->
+              </a>
             </h1>
             <ul>
-              <li><a class="current" href="index.html">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="#buyers-ref">Buyers</a></li>
               <li><a href="#about-ref">About</a></li>
               <li><a href="#contact-ref">Contact</a></li>
             </ul>
           </div>
-        </nav>
+        </div>
       </header>
 
       <section>
@@ -48,7 +55,7 @@
             <div class="floater-content">
               <h1>looking for a new home?</h1>
               <p>
-                <a target="_blank" href="search.html"
+                <a target="_blank" href="zillow.com"
                   >click here to start your search</a
                 >
               </p>
@@ -62,55 +69,53 @@
       <div class="list-container">
         <div class="container">
           <h2>Featured Listings</h2>
-          <div class="list-box" id="listing-1">
-            <img src="/img/img-1.jpg" alt="" />
-            <p class="price-box">$450,000</p>
-            <p>1500 Main St</p>
-            <p>Perris, CA</p>
-          </div>
-          <div class="list-box" id="listing-2">
-            <img src="/img/img-2.jpg" alt="" />
-            <p class="price-box">$450,000</p>
-            <p>1500 Main St</p>
-            <p>Perris, CA</p>
-          </div>
-          <div class="list-box" id="listing-3">
-            <img src="/img/img-3.jpg" alt="" />
-            <p class="price-box">$450,000</p>
-            <p>1500 Main St</p>
-            <p>Perris, CA</p>
-          </div>
-          <div class="list-box" id="listing-4">
-            <img src="/img/img-4.jpg" alt="" />
-            <p class="price-box">$450,000</p>
-            <p>1500 Main St</p>
-            <p>Perris, CA</p>
-          </div>
-          <br />
-          <div class="list-res-hidden">
-            <div class="list-box" id="listing-5">
-              <img src="/img/img-1.jpg" alt="" />
-              <p class="price-box">$450,000</p>
-              <p>1500 Main St</p>
-              <p>Perris, CA</p>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="/img/img-1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
             </div>
-            <div class="list-box" id="listing-6">
-              <img src="/img/img-2.jpg" alt="" />
-              <p class="price-box">$450,000</p>
-              <p>1500 Main St</p>
-              <p>Perris, CA</p>
+            <div class="col">
+              <div class="card h-100">
+                <img src="/img/img-2.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This card has supporting text below as a natural lead-in to
+                    additional content.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
             </div>
-            <div class="list-box" id="listing-7">
-              <img src="/img/img-3.jpg" alt="" />
-              <p class="price-box">$450,000</p>
-              <p>1500 Main St</p>
-              <p>Perris, CA</p>
-            </div>
-            <div class="list-box" id="listing-8">
-              <img src="/img/img-4.jpg" alt="" />
-              <p class="price-box">$450,000</p>
-              <p>1500 Main St</p>
-              <p>Perris, CA</p>
+            <div class="col">
+              <div class="card h-100">
+                <img src="/img/img-3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This card has even longer
+                    content than the first to show that equal height action.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -118,32 +123,34 @@
     </section>
     <section id="about-ref">
       <div class="parallax-wrapper-2">
-        <div class="container">
-          <div class="about-me-floater">
-            <img
-              src="https://u.realgeeks.media/shepherdrealtygroup/Betty_Final_SRG_White.jpg"
-              height="440"
-              width="400"
-              alt=""
-            />
+        <div class="about-me-container">
+          <div class="container">
+            <div class="about-me-floater">
+              <img
+                src="https://u.realgeeks.media/shepherdrealtygroup/Betty_Final_SRG_White.jpg"
+                height="440"
+                width="400"
+                alt=""
+              />
 
-            <div class="about-me-content">
-              <h1>about me</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Blanditiis, incidunt aliquid mollitia aliquam in facilis
-                repellendus nisi sapiente exercitationem, similique assumenda
-                numquam autem nemo consequatur quas tempore? Numquam, culpa
-                adipisci. Dolor qui voluptas distinctio quis facere est eligendi
-                delectus aperiam libero? Fugit, rem ratione sequi consequatur
-                error adipisci odio distinctio!
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Excepturi optio iure rerum enim fugiat sit veniam numquam? Esse
-                repellat laboriosam veniam impedit suscipit quis quibusdam ipsam
-                sapiente.
-              </p>
+              <div class="about-me-content">
+                <h1>about me</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Blanditiis, incidunt aliquid mollitia aliquam in facilis
+                  repellendus nisi sapiente exercitationem, similique assumenda
+                  numquam autem nemo consequatur quas tempore? Numquam, culpa
+                  adipisci. Dolor qui voluptas distinctio quis facere est
+                  eligendi delectus aperiam libero? Fugit, rem ratione sequi
+                  consequatur error adipisci odio distinctio!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Excepturi optio iure rerum enim fugiat sit veniam numquam?
+                  Esse repellat laboriosam veniam impedit suscipit quis
+                  quibusdam ipsam sapiente.
+                </p>
+              </div>
             </div>
           </div>
         </div>

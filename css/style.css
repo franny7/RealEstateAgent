@@ -13,7 +13,8 @@ html,
 body {
   font-family: 'Cinzel', serif;
   line-height: 1.7rem;
-  height: 100vh;
+  /* Might have to do 100vh below */
+  height: 100%;
   perspective: 1px;
   transform-style: preserve-3d;
   overflow-x: hidden;
@@ -25,11 +26,11 @@ a {
   text-decoration: none;
 }
 
-h1,
+/* h1,
 h2,
 h3 {
   padding-bottom: 20px;
-}
+} */
 
 hr {
   margin: 5rem;
@@ -113,7 +114,7 @@ hr {
   padding: 0 20px;
 }
 
-.text-primary {
+.primary-app-color {
   color: #0d89c5;
 }
 
@@ -194,7 +195,7 @@ hr {
   overflow: auto;
 }
 
-#navbar a {
+#navbar a:hover {
   color: #4d4d4d;
 }
 
@@ -254,56 +255,23 @@ hr {
   margin: auto;
   max-width: 100%;
   overflow: auto;
-  padding: 50px 20px;
+  padding-top: 50px;
   background: #e7e6e6;
-  height: 100vh;
+  /* Take off height property once i fix the about me! */
+  /* height: 100vh; */
 }
 
 .list-container h2 {
   background: #4d4d4d;
   color: #0d89c5;
   padding: 1.6rem;
-  margin: auto;
-}
-
-.list-container .list-box {
-  background: #e7e6e6;
-  margin: auto;
-  /* float: left; */
-  float: center;
-  width: 25%;
-  /* height: 40vh; */
-  height: auto;
-  border: #4d4d4d solid 2px;
-}
-
-.list-container .list-box img {
-  width: 100%;
-  height: auto;
-}
-
-.list-container .list-box p {
-  font-size: 1.2rem;
-  text-align: center;
-  color: #4d4d4d;
-  line-height: 1.4rem;
-}
-
-.list-container .list-box .price-box {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 1rem;
-  text-align: center;
-  padding: 10px;
-  color: #4d4d4d;
-  border: #ccc solid 1px;
-  width: 70%;
-  margin: auto;
-  transform: translate(0, -50%);
-  background: #fff;
+  margin: auto auto 10vh auto;
 }
 
 /* About-me */
+.about-me-container {
+}
+
 .about-me-floater {
   display: flex;
   align-items: center;
@@ -447,7 +415,7 @@ hr {
 
   /* Floater */
   .floater {
-    margin: 120px 50px;
+    margin-top: 25vh;
     padding: 20px 10px;
   }
 
@@ -456,23 +424,6 @@ hr {
   }
 
   /* Listings */
-  .list-container {
-    height: 100vh;
-  }
-
-  .list-res-hidden {
-    display: none;
-  }
-
-  .list-container .list-box {
-    min-width: 80%;
-    padding-bottom: 20px;
-    margin: auto;
-  }
-
-  .list-container h2 {
-    max-width: 80%;
-  }
 
   /* About-us */
 
@@ -548,9 +499,6 @@ hr {
   .company-ref {
     padding: 0;
   }
-}
-
-@media screen and (max-height: 905px) {
   hr {
     margin: 3rem;
   }
