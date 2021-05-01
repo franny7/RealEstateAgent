@@ -708,6 +708,12 @@ hr {
   }
 }
 
+@media screen and (max-height: 740px) {
+  .floater {
+    margin: 7rem 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .res-listings {
     display: none;
