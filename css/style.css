@@ -702,13 +702,17 @@ hr {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-height: 890px) {
   .res-listings {
     display: none;
   }
 }
 
-/* Height responsiveness */
+@media screen and (max-width: 767px) {
+  .res-listings {
+    display: none;
+  }
+}
 
 @media screen and (max-height: 600px) {
   .floater {
