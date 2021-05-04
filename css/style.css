@@ -1,3 +1,8 @@
+:root {
+  --overlay-color: rgba(24, 39, 51, 0.85);
+  --menu-speed: 0.75s;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -208,27 +213,6 @@ hr {
   line-height: 1.8rem;
   padding-top: 10px;
   width: 17rem;
-}
-
-#navbar ul {
-  list-style: none;
-  float: right;
-}
-
-#navbar ul li {
-  float: left;
-}
-
-#navbar ul li a {
-  display: block;
-  padding: 30px;
-  text-align: center;
-}
-
-#navbar ul li a:hover,
-#navbar ul li a.current {
-  background: #ccc;
-  color: #0d89c5;
 }
 
 /* Floater */
@@ -651,34 +635,6 @@ hr {
 
 /* Responsive css */
 @media screen and (max-width: 900px) {
-  #navbar {
-    float: none;
-    text-align: left;
-    background: rgb(231, 230, 230, 0.8);
-    padding-top: 10px;
-  }
-
-  #navbar .logo {
-    float: none;
-    display: inline;
-  }
-
-  #navbar ul {
-    float: none;
-    text-align: center;
-  }
-
-  #navbar ul li {
-    float: none;
-    text-align: center;
-    line-height: 0.2rem;
-    border-bottom: 1px dotted #757474;
-  }
-
-  #navbar ul li a {
-    padding: 15px;
-  }
-
   #navbar .logo span {
     display: block;
     padding-bottom: 20px;
@@ -768,6 +724,10 @@ hr {
 }
 
 @media screen and (max-width: 500px) {
+  #navbar .logo {
+    font-size: 1.3rem;
+  }
+
   .company-content {
     line-height: 1.3rem;
   }

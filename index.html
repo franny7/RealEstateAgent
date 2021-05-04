@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" type="text/css" href="css/custom.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -27,6 +28,7 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/smooth-scroll.js"></script>
+    <script src="scripts/zillow-api.js"></script>
     <title>Betty Rodriguez</title>
   </head>
   <body>
@@ -36,16 +38,31 @@
           <div class="container" style="height: 90px">
             <h1 class="logo">
               <a href="index.html" class="primary-app-color"
-                >Betty <br />Rodriguez
-                <!-- <span class="text-primary"
-                  >Real Estate Agent</span> -->
+                >Betty
+                <br />
+                Rodriguez
               </a>
             </h1>
-            <ul>
+            <div class="menu-wrap">
+              <input type="checkbox" class="toggler" />
+              <div class="hamburger"><div></div></div>
+              <div class="menu">
+                <div>
+                  <div>
+                    <ul>
+                      <li><a href="#buyers-ref">Buyers</a></li>
+                      <li><a href="#about-ref">About</a></li>
+                      <li><a href="#contact-ref">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <ul class="original-nav">
               <li><a href="#buyers-ref">Buyers</a></li>
               <li><a href="#about-ref">About</a></li>
               <li><a href="#contact-ref">Contact</a></li>
-            </ul>
+            </ul> -->
           </div>
         </div>
       </header>
@@ -81,7 +98,7 @@
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100">
-                <img src="/img/img-1.jpg" class="card-img-top" alt="..." />
+                <img id="listing-1" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">House 1</h5>
                   <p class="card-text">House description</p>
