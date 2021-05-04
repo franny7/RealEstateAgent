@@ -1,5 +1,5 @@
 .menu-wrap {
-  position: fixed;
+  position: relative;
   top: 0;
   right: 0;
   z-index: 1;
@@ -23,11 +23,10 @@
   z-index: 1;
   width: 60px;
   height: 60px;
-  padding: 1rem;
+  padding: 2rem 0 0 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
 }
 
 /* Hamburger Line */
@@ -135,4 +134,14 @@
   color: inherit;
   text-decoration: none;
   transition: color 0.4s ease;
+}
+
+@media screen and (max-width: 700px) and (max-height: 1150px) {
+  .menu-wrap .menu {
+    height: 70vh;
+  }
+
+  .menu-wrap .toggler:checked ~ .menu {
+    height: 70vh;
+  }
 }
