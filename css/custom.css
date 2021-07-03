@@ -20,4 +20,13 @@ h4,
 h5,
 h6 {
   font-weight: 600;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.carousel-dark .carousel-caption {
+  color: #4d4d4d;
 }
