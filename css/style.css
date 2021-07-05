@@ -9,7 +9,6 @@
   box-sizing: border-box;
 }
 
-/* main page styling */
 html {
   overflow: hidden;
   scroll-behavior: smooth;
@@ -18,7 +17,7 @@ html {
 html,
 body {
   font-family: 'Cinzel', serif;
-  line-height: 1.7rem;
+  /* line-height: 1.7rem; */
   height: 100%;
   perspective: 1px;
   transform-style: preserve-3d;
@@ -27,7 +26,7 @@ body {
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 a {
@@ -37,10 +36,14 @@ a {
 
 a:hover {
   color: #333;
+  text-decoration: none;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
 }
 
 hr {
-  margin: 5rem;
+  margin: 3rem;
 }
 
 ::-webkit-scrollbar {
@@ -100,28 +103,6 @@ hr {
   background: #e7e6e6;
 }
 
-.regular-wrapper-contact {
-  width: 100vw;
-  height: 80vh;
-  z-index: 2;
-  position: relative;
-  background: #e7e6e6;
-}
-
-.regular-wrapper-footer {
-  width: 100vw;
-  height: 100vh;
-  z-index: 2;
-  position: relative;
-  background: #e7e6e6;
-}
-
-.content {
-  margin: 0 auto;
-  padding: 50px;
-  width: 100%;
-}
-
 /* Utility */
 .container {
   margin: auto;
@@ -159,17 +140,8 @@ hr {
 /* Floater */
 .floater {
   background: rgba(255, 255, 255, 0.8);
-  margin: 15rem 0;
+  margin: 25% 0;
   padding: 3rem 4rem;
-}
-
-.floater .res-floater-content {
-  display: none;
-  font-size: 1.6rem;
-  text-align: center;
-  color: #0d89c5;
-  overflow: hidden;
-  line-height: 2.5rem;
 }
 
 .floater .floater-content {
@@ -186,22 +158,85 @@ hr {
   color: #0d89c5;
 }
 
-/* About-me */
+/* About Me */
 .about-me-content {
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.about-me-content h1,
+h2 {
+  color: #0d89c5;
+  padding: 3rem 0 2rem 0;
+}
+
+.about-me-content h5 {
+  color: #0d89c5;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.about-me-content p {
+  line-height: 2rem;
+  padding: 2rem 0 2rem 0;
+}
+
+.about-me-content li p {
+  padding: 0;
+}
+
+.about-me-content li {
+  list-style: none;
+}
+
+/* Testimonials */
+.test-floater {
+  margin-top: 4rem;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.test-floater h1,
+h2 {
   display: block;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
-.about-me-content h1,
-h2 {
-  color: #0d89c5;
-  padding: 2rem 0 2rem 0;
+.test-floater h5,
+p {
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  line-height: 2rem;
+}
+
+.test-floater h5 {
+  padding-bottom: 2rem;
+}
+
+.test-floater p {
+  width: auto;
+  padding: 0 5rem 3rem 5rem;
+}
+
+.test-inv-h2 {
+  visibility: hidden;
+}
+
+.test-img {
+  border-radius: 50%;
+  height: auto;
+  width: 30%;
+  margin: 40px;
 }
 
 /* Company Info */
-.company-content {
+.contact-content {
   width: auto;
   text-align: center;
   overflow: hidden;
@@ -209,53 +244,36 @@ h2 {
   margin: 2rem;
 }
 
-.company-ref {
+.contact-ref {
   margin: auto;
   max-width: 100%;
   overflow: hidden;
-  padding: 50px 20px;
   background: #e7e6e6;
-  height: 80vh;
+  height: 90vh;
 }
 
-.company-ref .company-left {
-  float: left;
-  width: 40%;
-  padding-left: 4rem;
+.contact-ref .contact {
+  float: center;
 }
 
-.company-ref .company-right {
-  float: right;
-  width: 40%;
-  margin: 5vh auto;
-}
-
-.company-ref .company-right-res {
-  display: none;
-}
-
-.company-ref .company-right i {
-  display: inline;
-  margin: 1rem;
-}
-
-.company-ref .company-left i {
-  border: #ccc solid 1px;
-}
-
-.company-ref .company-left h3 {
+.contact-ref .contact h3 {
   text-align: center;
   padding-top: 15px;
 }
 
-.company-ref .company-left p {
+.contact-ref .contact p {
   line-height: 2rem;
   text-align: center;
 }
 
-.company-ref .company-left p a:hover,
-.company-ref .company-right p a:hover {
-  color: #0d89c5;
+.center i {
+  margin: 2.5rem 1rem;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Footer */
@@ -265,342 +283,96 @@ h2 {
   position: relative;
   margin: auto;
   color: #333;
-  height: auto;
+  height: 10vh;
 }
 
 #footer p {
   padding: 30px;
 }
 
-@media screen and (max-width: 375px) and (max-height: 812px) {
-  .about-me-content p {
-    font-size: 0.8rem;
+@media screen and (max-width: 1300px) {
+  html,
+  body {
+    font-size: 0.7rem;
   }
 
-  .floater p {
-    margin-bottom: 0;
+  .floater {
+    margin: 20% 0;
+  }
+
+  .test-img {
+    width: 15%;
+  }
+
+  .about-me-content p {
+    padding: 1rem;
+  }
+
+  .about-me-content h1,
+  h2 {
+    padding: 2rem 0 2rem 0;
+  }
+
+  .about-me-content h5 {
+    padding: 1rem 0;
+  }
+
+  .about-me-content li p {
+    padding: 0;
   }
 }
 
-@media screen and (max-width: 700px) and (max-height: 1150px) {
+@media screen and (min-width: 750px) and (min-height: 1000px) {
+  html,
+  body {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) and (max-height: 900px) {
   .parallax-wrapper {
     width: 100vw;
-    height: 60vh;
+    height: 100vh;
     box-sizing: border-box;
     transform-style: preserve-3d;
   }
 
   .parallax-wrapper:before {
-    margin-top: -25vh;
     content: '';
-    width: 200vw;
-    height: 90vh;
-    /* top: -10vh; */
+    width: 100vw;
+    height: 100vh;
     left: 0;
-    background-image: url('/img/bg-index-4.jpg');
+    background-image: url('/img/bg-index-1.jpg');
     background-position: center;
-    background-size: 100%;
+    background-size: 200%;
     background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
     transform: translateZ(-1px) scale(2);
   }
 
-  .floater {
-    margin-top: 10vh;
-    padding: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-
-  .floater .floater-content {
-    display: none;
-  }
-
-  .floater .res-floater-content {
-    font-size: 1rem;
-    display: block;
-    margin-bottom: 30vh;
-  }
-
-  .floater .res-floater-content h1 {
-    padding-top: 3vh;
-    font-size: 1.2rem;
-  }
-
-  .floater .res-floater-content p {
-    font-size: 0.9rem;
-  }
-
   .parallax-wrapper-2 {
-    margin-top: 15vh;
-    width: 150vw;
-    height: 90vh;
+    width: 100vw;
+    height: 100vh;
     box-sizing: border-box;
     transform-style: preserve-3d;
   }
 
   .parallax-wrapper-2:before {
     content: '';
-    width: 180vw;
-    height: 110vh;
-    top: -110px;
+    width: 100vw;
+    height: 100vh;
     left: 0;
     background-image: url('/img/bg-index-6.jpg');
     background-position: center;
-    background-size: 130%;
+    background-size: 200%;
     background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
     transform: translateZ(-1px) scale(2);
   }
 
-  .about-me-floater {
-    width: 90vw;
-    margin-top: 60vh;
-    margin-right: 55vw;
-    height: 25vh;
-  }
-
-  .about-me-floater img {
-    margin-left: 5px;
-  }
-
-  .about-me-content {
-    line-height: 1;
-    font-size: 0.7rem;
-    padding: 0;
-    font-weight: 100;
-  }
-
-  .about-me-content h1 {
-    padding: 0 0 0 5px;
-    font-size: 1.3rem;
-  }
-
-  .company-ref {
-    height: 70vh;
-  }
-}
-
-@media screen and (max-width: 600px) and (max-height: 750px) {
-  .about-me-floater {
-    margin-top: 55vh;
-    height: 30vh;
-    width: 92vw;
-  }
-
-  .company-content {
-    margin-bottom: 0;
-  }
-
-  .company-ref .company-left p {
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 1024px) and (max-height: 1366px) {
   .floater {
-    margin: 20rem 0;
-  }
-
-  .row > * {
-    margin-bottom: 7rem;
-  }
-
-  .company-content {
-    margin: 4rem 0 7rem 0;
-  }
-
-  .company-ref {
-    padding: 50px 140px;
-    height: 65vh;
-  }
-
-  hr {
-    margin: 5rem;
-  }
-
-  #footer p {
-    margin-top: 60px;
-    padding: 60px;
-  }
-}
-
-@media screen and (max-width: 768px) and (max-height: 1024px) {
-  .company-ref {
-    padding: 0;
-  }
-}
-
-@media screen and (max-width: 414px) and (max-height: 812px) {
-  .floater {
-    margin: 5rem 0;
-  }
-
-  .row > * {
-    margin-bottom: 0;
-  }
-
-  .about-me-floater {
-    margin-top: 50vh;
-  }
-
-  .company-content {
-    margin: 2rem 0 2rem 0;
-  }
-
-  #footer p {
-    padding: 40px;
-  }
-
-  hr {
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .about-me-floater {
-    height: 60vh;
-    margin: 17rem 0;
-  }
-
-  .company-ref {
-    padding: 50px 0;
-  }
-
-  hr {
-    margin: 2rem;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .row > * {
-    margin-bottom: 5px;
-  }
-
-  .about-me-floater {
-    margin: 29rem 0;
-    height: 47vh;
-  }
-
-  .company-content {
-    margin: 0;
-  }
-}
-
-/* Responsive css */
-@media screen and (max-width: 900px) {
-  #navbar .logo span {
-    display: block;
-    padding-bottom: 20px;
-  }
-
-  /* Company Info */
-  .company-ref .company-left {
-    width: 100%;
-    margin-top: 0;
-    height: auto;
-    padding: 0;
-  }
-
-  .company-ref .company-right {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    margin: 0;
-  }
-}
-
-@media screen and (max-height: 740px) {
-  .floater {
-    margin: 7rem 0;
-  }
-}
-
-@media screen and (max-height: 600px) {
-  .floater {
-    margin: 7rem 0;
-  }
-
-  .about-me-floater {
-    line-height: 1.2;
-  }
-
-  .about-me-floater img {
-    height: 300px;
-    width: 260px;
-  }
-}
-
-/* Contact Section queries */
-
-@media screen and (max-height: 740px) {
-  hr {
-    margin: 1rem;
-  }
-}
-
-@media screen and (max-height: 600px) {
-  hr {
-    margin: 5px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .about-me-floater {
-    margin: 10rem 0;
-  }
-
-  .about-me-content {
-    font-size: 1rem;
-  }
-
-  .about-me-content h1 {
-    font-size: 1.5rem;
-  }
-
-  .floater {
-    margin: 10rem 0;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  #navbar .logo {
-    font-size: 1.3rem;
-  }
-
-  .company-content {
-    line-height: 1.3rem;
-  }
-}
-
-@media screen and (max-width: 345px) {
-  .company-content {
-    margin: 1rem 0;
-  }
-
-  .company-ref .company-left h3 {
-    padding: 0;
-  }
-}
-
-@media screen and (max-width: 250px) {
-  .company-ref {
-    font-size: 0.8rem;
-  }
-}
-
-@media screen and (max-height: 670px) {
-  .company-content {
-    line-height: 1.5;
-  }
-}
-
-@media screen and (max-height: 590px) {
-  .company-content {
-    margin: 1rem;
+    margin: 50% 0;
   }
 }

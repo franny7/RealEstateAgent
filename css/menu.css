@@ -13,7 +13,7 @@
   cursor: pointer;
   width: 30px;
   height: 30px;
-  margin: 2rem 0 0 2rem;
+  margin: 32px 0 0 32px;
   opacity: 0;
 }
 
@@ -24,7 +24,7 @@
   z-index: 1;
   width: 60px;
   height: 60px;
-  padding: 2rem 0 0 2rem;
+  padding: 32px 0 0 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,10 +139,10 @@
 
 @media screen and (max-width: 700px) and (max-height: 1150px) {
   .menu-wrap .menu {
-    height: 70vh;
+    height: 100vh;
   }
 
   .menu-wrap .toggler:checked ~ .menu {
-    height: 70vh;
+    height: 100vh;
   }
 }
