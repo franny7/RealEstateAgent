@@ -70,7 +70,7 @@ hr {
   background-repeat: no-repeat;
   position: absolute;
   z-index: -1;
-  transform: translateZ(-1px) scale(2);
+  /* transform: translateZ(-1px) scale(2); */
 }
 
 .parallax-wrapper-2 {
@@ -92,7 +92,7 @@ hr {
   background-repeat: no-repeat;
   position: absolute;
   z-index: -1;
-  transform: translateZ(-1px) scale(2);
+  /* transform: translateZ(-1px) scale(2); */
 }
 
 .regular-wrapper {
@@ -348,7 +348,7 @@ p {
     background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
-    transform: translateZ(-1px) scale(2);
+    /* transform: translateZ(-1px) scale(2); */
   }
 
   .parallax-wrapper-2 {
@@ -369,7 +369,7 @@ p {
     background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
-    transform: translateZ(-1px) scale(2);
+    /* transform: translateZ(-1px) scale(2); */
   }
 
   .floater {
